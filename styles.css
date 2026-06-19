@@ -1,0 +1,86 @@
+/* 🎨 Variables Globales pour maintenir une cohérence de marque */
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --purple: #9333ea;
+    --dark: #0f172a;
+    --light: #f8fafc;
+}
+
+/* 🌟 Personnalisation de la Barre de Défilement (Scrollbar) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 5px;
+    border: 2px solid var(--light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* ✨ Surlignage de texte personnalisé */
+::selection {
+    background-color: rgba(79, 70, 229, 0.2);
+    color: var(--dark);
+}
+
+/* 🌌 Effet de Texte Dégradé et Animé pour ton Nom */
+.animate-gradient-text {
+    background: linear-gradient(to right, var(--primary), var(--purple), var(--primary));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+    to { background-position: 200% center; }
+}
+
+/* 🪟 Effet Glassmorphism pour la Barre de Navigation */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+}
+
+/* 🚀 Micro-interactions de niveau professionnel sur les cartes */
+.custom-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.1), 0 10px 10px -5px rgba(79, 70, 229, 0.04);
+    border-color: rgba(79, 70, 229, 0.3);
+}
+
+/* 🧠 Effet de lueur subtile (Glow Effect) pour tes cartes de compétences en IA */
+.tech-glow:hover {
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.15);
+    border-color: rgba(147, 51, 234, 0.3);
+}
+
+/* ⏳ Animation douce au chargement de la page */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
